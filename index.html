@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-page" class="page1">
+        <h1>Mesg Chat</h1>
+        <div class="chat-input">
+            <input type="text" id="login-input" placeholder="Enter your Mobile Number">
+            <button id="login-button">Login</button>
+            <p id="connectionstatus"></p>
+        </div>
+    </div>
+
+    <div id="chat-page" class="page" style="display: none;">
+        <p id="instachat">Instagram Chat</p>
+        <img width="30" height="30" id="threedots" src="https://img.icons8.com/fluency/48/menu-squared-2.png" alt="ellipsis"/>
+        <div class="sidebar">
+        <ul id="number-list">
+
+       
+        </ul>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Type a message">
+            <button id="send-button"><img src="https://img.icons8.com/ios-glyphs/30/paper-plane.png" alt="Send"></button>
+            <p id="rmsg" > </p>
+            <p id="responseMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
