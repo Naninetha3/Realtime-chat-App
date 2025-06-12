@@ -22,7 +22,7 @@ let websocket;
 document.getElementById('login-button').addEventListener('click', function() {
     const phoneNumber = document.getElementById('login-input').value;
     if (phoneNumber) {
-        websocket = new WebSocket(`ws://localhost:8000/ws/${phoneNumber}`);
+        websocket = new WebSocket(`ws://192.168.1.5:8000/ws/${phoneNumber}`);
         websocket.onopen = function() {
             alert("✅ Connected to WebSocket server.");
             showMessage("Connected to WebSocket server.");
